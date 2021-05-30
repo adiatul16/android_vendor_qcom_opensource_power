@@ -52,6 +52,10 @@ ifeq ($(call is-board-platform-in-list,msm8610), true)
 LOCAL_SRC_FILES += power-8610.c
 endif
 
+ifeq ($(call is-board-platform-in-list,atoll), true)
+LOCAL_SRC_FILES += power-atoll.c
+endif
+
 ifeq ($(call is-board-platform-in-list, apq8084), true)
 LOCAL_SRC_FILES += power-8084.c
 endif
